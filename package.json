@@ -2,7 +2,7 @@
   "name": "dynamic-form",
   "private": true,
   "version": "0.0.0",
-  "type": "commonJS",
+  "type": "commonjs",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "build": "vue-tsc -b && vite build",

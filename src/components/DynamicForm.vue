@@ -5,7 +5,7 @@
       <div v-for="field in fields" :key="field.id" :class="{ highlighted: isHighlighted(field.value) }">
         <input
           :value="field.value"
-          @input="updateField(field.id, $event.target?.value)"
+          @input="updateField(field.id, ($event.target as HTMLInputElement).value)"
         />
         <button type="button" @click="removeField(field.id)" :disabled="fields.length <= 1">Remove</button>
         <span>Vowels: {{ vowelCount(field.value) }}</span>
